@@ -12,9 +12,7 @@ import java.io.PrintWriter;
 public class MyServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
         resp.setContentType("text/html");
-
         PrintWriter out = resp.getWriter();
         out.println("<html>");
         out.println("<body>");
@@ -22,4 +20,5 @@ public class MyServlet extends HttpServlet {
         out.println("</body>");
         out.println("</html>");
     }
+
 }
